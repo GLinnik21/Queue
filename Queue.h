@@ -18,5 +18,6 @@ bool add(Queqe **, int);
 int take(Queqe **);
 int watch(Queqe *);
 void printQueqe(Queqe *);
+void clearQueqe(Queqe **);
 
 #endif //QUEUE_QUEUE_H

@@ -49,11 +49,20 @@ int watch(Queqe *queqe) {
 }
 
 void printQueqe(Queqe *queqe) {
+    if (queqe->next == NULL)
+        return;
     queqe = (queqe->start)->next;
     while (1) {
         printf("%d\n", queqe->value);
         if (queqe->next == NULL) break;
         queqe = queqe->next;
+    }
+}
+
+void clearQueqe(Queqe **queqe) {
+    while (1) {
+        take(queqe);
+        if ((*queqe) == (*queqe)->start) break;
     }
 }
 

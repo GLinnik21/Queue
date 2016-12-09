@@ -17,6 +17,10 @@ int main() {
     printQueqe(queqe);
 
     printf("Watching what's on the top: %d\n", watch(queqe));
+
+    printf("Clearing:\n");
+    clearQueqe(&queqe);
+
     return 0;
 }
 
